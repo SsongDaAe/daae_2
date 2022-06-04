@@ -1,0 +1,53 @@
+@charset "utf-8";
+/* CSS Document */
+
+html,body,h1,h2,h3,h4,h5,h6,div,dl,dt,dd,ul,ol,li,p,address,main,nav,header,aside,article,section,footer,figure,table,tr,th,td,caption,thead,tbody,form,fieldset,blockquote {margin: 0}
+ul, ol, dl {padding: 0;}
+li {list-style: none}
+a {text-decoration: none; color: inherit;}
+a img {border: 0;}
+address, cite, i {font-style: normal}
+h1,h2,h3,h4,h5,h6 {font-weight: normal}
+table {border-collapse: collapse;border-spacing: 0;}
+caption {height: 0; text-indent: -9999px}
+header,nav,aside,article,main,section,footer,figure {display: block;}
+
+.cf:before,
+.cf:after {content: '';	display: block;	clear: both;}
+
+/* reset _ mobile */
+html {-webkit-text-size-adjust: none; text-size-adjust: none;}
+/*모바일에서는 반드시 작성해야함 */
+body {margin: 0;}
+h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, p, table, blockquote {margin: 0; padding: 0;}
+h1, h2, h3, h4, h5, h6 {font-weight: 600;}
+main {display: block;}
+a {color: inherit; text-decoration: inherit;}
+a img {border: none;}
+img {vertical-align: middle; max-width: 100%;}
+/*max-width: 100%; 가장 중요함 이미지가 부모속성에 맞춰서 같이 줄어듬 */
+li {list-style: none;}
+address, em, i, cite {font-style: normal;}
+table {border-collapse: collapse;}
+table caption {overflow: hidden; width: 0; height: 0;}
+i.fas, i.far, i.fab {vertical-align: middle; display: inline-block;}
+i.fas span, i.far span, i.fab span {position: absolute; overflow: hidden; text-indent: -999px;}
+.pc {display: none !important;}
+/*pc에서는 보여지지 않게*/
+br.only-w {content: '';}
+br.only-w:after {content: '\00a0';}
+div.hidden {position: absolute; left: -9999px;}
+
+
+/* common */
+body {font-family: 'NotoSansKR', '맑은 고딕', 'malgun gothic', '돋움', Dotum, 'Apple SD Gothic Neo', Helvetica, sans-serif; font-weight: 400; font-size: 14px; color: #333333 ; background: #fff;}
+/*폰트를 나열하는것을 펄백컨텐츠 라고 함*/
+#wrap {min-width: 320px; max-width: 850px; margin: 0 auto; overflow: hidden;}
+/*min-width, max-width 를 둘다 지정해줌 / 850px보다 안커지게*/
+#skip-nav {position: fixed; width: 100%; line-height: 40px; text-align: center; top: -42px; background: rgba(0,0,0,.6); color: #fff; font-size: 16px; z-index: 100000; transition: top 0.3s;}
+#skip-nav:focus {top: 0;}
+
+
+
+
+
